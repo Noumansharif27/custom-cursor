@@ -1,6 +1,6 @@
-let circle = document.querySelector("#circle"); //
-let frames = document.querySelector("#frames");
-// let frame = document.querySelector(".frame");
+let circle = document.querySelector("#circle");
+// let frames = document.querySelector("#frames");
+let frame = document.querySelector(".frame");
 
 window.addEventListener("mousemove", (details) => {
   gsap.to("#circle", {
