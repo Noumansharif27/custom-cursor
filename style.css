@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: navajowhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#circle {
+  pointer-events: none;
+  height: 1vw;
+  width: 1vw;
+  background-color: navy;
+  border-radius: 50%;
+  position: absolute;
+  transition: all ease 0.1s;
+  z-index: 1;
+}
+
+#frames {
+  /* pointer-events: all; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 50px;
+  background-color: rebeccapurple;
+}
+
+.frame {
+  width: 20vw;
+  height: 10vh;
+  /* background-color: aqua; */
+  text-align: center;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.frame span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* width: 100%; */
+  font-weight: 600;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.frame span a {
+  font-size: 2vw;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  z-index: 2;
+}
